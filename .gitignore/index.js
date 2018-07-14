@@ -37,6 +37,17 @@ bot.on('message', message => {
         console.log("Commande inscription Effectué")
 
     }
+    
+    if message.content === prefix + "embed"){
+        var embed = new discord.RichEmbed()
+            .setTitle("EMBED")
+            .setDescription("ceci est un embed")
+            .addField(".help","page d'aide", true)
+            .addField("Embed01","Voici les règles du serveur [Destroy Community's] (#🚸charte🚸", true)
+            .setColor("0x04B486")
+            .setFooter ("Bon moment parmis nous !")
+        message.channel.sendEmbed(embed);
+    }
 });
 
 bot.on('guildMemberAdd', member => {
