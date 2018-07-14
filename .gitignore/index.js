@@ -12,9 +12,7 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message', message => {
-    if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: \n *help ;Salut ;Comment va-tu ? ;DestroyBot");
-    }
+    
 
     if (message.content === "Salut"){
         message.reply("Bien le bonjour, fait *help pour savoir les commandes. :)");
