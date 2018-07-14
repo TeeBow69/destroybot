@@ -38,12 +38,12 @@ bot.on('message', message => {
 
     }
     
-    if message.content === prefix + "embed"){
+    if (message.content === prefix + "help"){
         var embed = new discord.RichEmbed()
-            .setTitle("EMBED")
-            .setDescription("ceci est un embed")
-            .addField(".help","page d'aide", true)
-            .addField("Embed01","Voici les règles du serveur [Destroy Community's] (#🚸charte🚸", true)
+            .setTitle("Page D'aide")
+            .setDescription("Voici la page d'aide")
+            .addField("[DOC]", "https://docs.google.com/document/d/1ZoV-ylZSG8f_dLeI9jzdav3vRFGyRxwlBaVMrIdi1DA/edit?usp=sharing")
+            .addField("Règles du serveur","Voici les règles du serveur #🚸charte🚸", true)
             .setColor("0x04B486")
             .setFooter ("Bon moment parmis nous !")
         message.channel.sendEmbed(embed);
