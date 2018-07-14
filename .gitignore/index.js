@@ -13,7 +13,6 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
     
-
     if (message.content === "Salut"){
         message.reply("Bien le bonjour, fait *help pour savoir les commandes. :)");
         console.log("Commande Salut Effectué");
